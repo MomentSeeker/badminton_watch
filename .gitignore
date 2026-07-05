@@ -7,3 +7,5 @@ xcuserdata/
 *.xcuserdatad/
 *.swp
 *.tmp
+sampleUI/
+KineticVelocityWatch/Assets.xcassets/svg_*.imageset/
