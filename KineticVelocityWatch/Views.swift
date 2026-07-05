@@ -11,7 +11,11 @@ struct RootView: View {
             case .idle:
                 StartSetupView()
             case .recording:
-                LiveSessionView()
+                if KineticUIConfig.useVisualIconUI {
+                    VisualIconLiveSessionView()
+                } else {
+                    LiveSessionView()
+                }
             case .pendingEndConfirm:
                 EndConfirmView()
             case .saving:

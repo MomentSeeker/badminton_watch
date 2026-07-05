@@ -10,6 +10,7 @@
 		081DF4493C80BEF5997184B3 /* DiagnosticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10A988CEF6EC5285941D0D /* DiagnosticsLogger.swift */; };
 		264AECFD6149F5B8296C14AC /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CAEF57D3FA8A1168BCAB7 /* Components.swift */; };
 		29B637D5F89571B40A51A3A0 /* SwingWindowRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CACF5CFEB1B669F9EF160 /* SwingWindowRecorder.swift */; };
+		3740456522F0E145D158AD1E /* VisualIconUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892BFA1DE987F035A04EB372 /* VisualIconUI.swift */; };
 		7B58367957FDAE9E8791E156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1426F5E2CB64337AE662A69F /* Assets.xcassets */; };
 		7EAF298099866DF4C756E17C /* CalibrationDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7911AF5590F9011E240798 /* CalibrationDebug.swift */; };
 		9626C773D4936DD6ACDBABCA /* swing_calibration.json in Resources */ = {isa = PBXBuildFile; fileRef = FC35940ECA8C97675353EB39 /* swing_calibration.json */; };
@@ -34,6 +35,7 @@
 		4F4A4FE3CB70F7E809ECA077 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		5B83C4C2BC1D556BEFEDE31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		731CAEF57D3FA8A1168BCAB7 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		892BFA1DE987F035A04EB372 /* VisualIconUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualIconUI.swift; sourceTree = "<group>"; };
 		A85A8A6DAA0B35AE90DAD189 /* MotionSwingDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSwingDetector.swift; sourceTree = "<group>"; };
 		AD6CACF5CFEB1B669F9EF160 /* SwingWindowRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingWindowRecorder.swift; sourceTree = "<group>"; };
 		BE7911AF5590F9011E240798 /* CalibrationDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationDebug.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				AD6CACF5CFEB1B669F9EF160 /* SwingWindowRecorder.swift */,
 				2338E45B8326A8A42698C0AC /* Theme.swift */,
 				4F4A4FE3CB70F7E809ECA077 /* Views.swift */,
+				892BFA1DE987F035A04EB372 /* VisualIconUI.swift */,
 			);
 			path = KineticVelocityWatch;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				29B637D5F89571B40A51A3A0 /* SwingWindowRecorder.swift in Sources */,
 				9FE484566CB419C742E78011 /* Theme.swift in Sources */,
 				E71E1E04FE4A9852A4DB3B4D /* Views.swift in Sources */,
+				3740456522F0E145D158AD1E /* VisualIconUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
