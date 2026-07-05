@@ -1,0 +1,15 @@
+{
+  "images": [
+    {
+      "filename": "svg_action_arrow_right_badge.svg",
+      "idiom": "universal"
+    }
+  ],
+  "info": {
+    "author": "xcode",
+    "version": 1
+  },
+  "properties": {
+    "preserves-vector-representation": true
+  }
+}
