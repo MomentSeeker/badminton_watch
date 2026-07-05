@@ -1,0 +1,23 @@
+{
+  "activeAccelerationG": 0.18,
+  "activeRotationRads": 1.25,
+  "cooldownSeconds": 0.42,
+  "detectionAccelerationImpulse": 0.08,
+  "detectionPeakAccelerationG": 0.95,
+  "detectionPeakRotationRads": 4.6,
+  "detectionPeakScore": 7.4,
+  "detectionRearmPeakScoreRatio": 0.68,
+  "estimatedRacketRadiusMeters": 1.35,
+  "forehandLateralThreshold": 0.0,
+  "localPeakMaxDelaySeconds": 0.10,
+  "localPeakScoreRatio": 0.85,
+  "minimumWindowSampleCount": 12,
+  "overheadVerticalThreshold": 0.0,
+  "rallyGapSeconds": 8.0,
+  "sampleBufferSeconds": 0.55,
+  "sampleRateHz": 100.0,
+  "smashAccelerationImpulse": 0.5266798781314144,
+  "smashPeakAccelerationG": 2.9140029012336397,
+  "smashPeakRotationRads": 9.955372160634852,
+  "windowSeconds": 0.42
+}

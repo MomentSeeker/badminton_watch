@@ -1,0 +1,33 @@
+Debug export summary
+====================
+
+Exported from Apple Watch app container:
+Documents/KineticVelocity/swing_windows.jsonl
+
+Current files:
+- CalibrationData/swing_windows.jsonl: all exported windows
+- CalibrationData/swing_windows_features.csv: all exported windows converted to features
+- CalibrationData/swing_windows_debug_labeled.csv: only Debug Mode labeled rows
+- CalibrationData/swing_calibration_debug.json: threshold-only calibration experiment, not recommended for install
+
+Counts from this export:
+- Total JSONL rows: 317
+- Debug labeled rows: 97
+- Debug stroke_peak rows: 50
+- Debug recovery/no_swing rows: 47
+- Overhead stroke_peak rows: 30
+- Underhand stroke_peak rows: 20
+
+Current threshold classifier:
+- labelStrokeType accuracy on Debug rows: 19/50 = 38% with bundled calibration
+- threshold-only retraining: 29/50 = 58%
+
+Offline multi-feature probe:
+- Best one-feature threshold: rotationYMean, about 90% on this small set
+- Best 4-feature leave-one-out nearest-centroid probe: about 92%
+- Features used in the 4-feature probe: rotationYMean, accelerationXMax, signedLateralRotation, accelerationZMin
+
+Interpretation:
+- The current single-axis overhead/underhand runtime rule is not good enough.
+- The labeled Debug rows are useful and separate stroke_peak from recovery very clearly.
+- Next runtime model should use a small multi-feature classifier for overhead/underhand, not only signedVerticalRotation.

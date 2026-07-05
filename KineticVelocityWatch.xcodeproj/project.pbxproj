@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081DF4493C80BEF5997184B3 /* DiagnosticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F10A988CEF6EC5285941D0D /* DiagnosticsLogger.swift */; };
+		264AECFD6149F5B8296C14AC /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731CAEF57D3FA8A1168BCAB7 /* Components.swift */; };
+		29B637D5F89571B40A51A3A0 /* SwingWindowRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CACF5CFEB1B669F9EF160 /* SwingWindowRecorder.swift */; };
+		7B58367957FDAE9E8791E156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1426F5E2CB64337AE662A69F /* Assets.xcassets */; };
+		7EAF298099866DF4C756E17C /* CalibrationDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7911AF5590F9011E240798 /* CalibrationDebug.swift */; };
+		9626C773D4936DD6ACDBABCA /* swing_calibration.json in Resources */ = {isa = PBXBuildFile; fileRef = FC35940ECA8C97675353EB39 /* swing_calibration.json */; };
+		9EC1BDC42FFB673A6B16602F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3BF7873BA33D80AF229A8 /* Models.swift */; };
+		9FE484566CB419C742E78011 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2338E45B8326A8A42698C0AC /* Theme.swift */; };
+		A04170B4B93657B805161CED /* KineticVelocityWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01246D3F6EF96FC68BD86FC5 /* KineticVelocityWatchApp.swift */; };
+		B1558162171BA28BE59EA95E /* MotionSwingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85A8A6DAA0B35AE90DAD189 /* MotionSwingDetector.swift */; };
+		E670ECBCEB49F2039555D4D9 /* SwingCalibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED0BEB41537AAB8AF3076CA /* SwingCalibration.swift */; };
+		E71E1E04FE4A9852A4DB3B4D /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A4FE3CB70F7E809ECA077 /* Views.swift */; };
+		F6AFD2C99DC0C75D9B847718 /* HealthKitWorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0934669E85EF6B876EBCBC5B /* HealthKitWorkoutManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01246D3F6EF96FC68BD86FC5 /* KineticVelocityWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineticVelocityWatchApp.swift; sourceTree = "<group>"; };
+		0934669E85EF6B876EBCBC5B /* HealthKitWorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitWorkoutManager.swift; sourceTree = "<group>"; };
+		1426F5E2CB64337AE662A69F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2338E45B8326A8A42698C0AC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		2993BFFFEF4D0987E3FCBCBC /* KineticVelocityWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KineticVelocityWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A3BF7873BA33D80AF229A8 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4ED0BEB41537AAB8AF3076CA /* SwingCalibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingCalibration.swift; sourceTree = "<group>"; };
+		4F10A988CEF6EC5285941D0D /* DiagnosticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsLogger.swift; sourceTree = "<group>"; };
+		4F4A4FE3CB70F7E809ECA077 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		5B83C4C2BC1D556BEFEDE31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		731CAEF57D3FA8A1168BCAB7 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		A85A8A6DAA0B35AE90DAD189 /* MotionSwingDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSwingDetector.swift; sourceTree = "<group>"; };
+		AD6CACF5CFEB1B669F9EF160 /* SwingWindowRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwingWindowRecorder.swift; sourceTree = "<group>"; };
+		BE7911AF5590F9011E240798 /* CalibrationDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationDebug.swift; sourceTree = "<group>"; };
+		CA6FCC1E2A8D4185A0391822 /* KineticVelocityWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KineticVelocityWatch.entitlements; sourceTree = "<group>"; };
+		FC35940ECA8C97675353EB39 /* swing_calibration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = swing_calibration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4D9A60751B7CF5D48B34F009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2993BFFFEF4D0987E3FCBCBC /* KineticVelocityWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67728CA13820B18CE8EF3B12 /* KineticVelocityWatch */ = {
+			isa = PBXGroup;
+			children = (
+				1426F5E2CB64337AE662A69F /* Assets.xcassets */,
+				BE7911AF5590F9011E240798 /* CalibrationDebug.swift */,
+				731CAEF57D3FA8A1168BCAB7 /* Components.swift */,
+				4F10A988CEF6EC5285941D0D /* DiagnosticsLogger.swift */,
+				0934669E85EF6B876EBCBC5B /* HealthKitWorkoutManager.swift */,
+				5B83C4C2BC1D556BEFEDE31A /* Info.plist */,
+				CA6FCC1E2A8D4185A0391822 /* KineticVelocityWatch.entitlements */,
+				01246D3F6EF96FC68BD86FC5 /* KineticVelocityWatchApp.swift */,
+				33A3BF7873BA33D80AF229A8 /* Models.swift */,
+				A85A8A6DAA0B35AE90DAD189 /* MotionSwingDetector.swift */,
+				FC35940ECA8C97675353EB39 /* swing_calibration.json */,
+				4ED0BEB41537AAB8AF3076CA /* SwingCalibration.swift */,
+				AD6CACF5CFEB1B669F9EF160 /* SwingWindowRecorder.swift */,
+				2338E45B8326A8A42698C0AC /* Theme.swift */,
+				4F4A4FE3CB70F7E809ECA077 /* Views.swift */,
+			);
+			path = KineticVelocityWatch;
+			sourceTree = "<group>";
+		};
+		972ED8EA4484921DBFDE6E35 = {
+			isa = PBXGroup;
+			children = (
+				67728CA13820B18CE8EF3B12 /* KineticVelocityWatch */,
+				4D9A60751B7CF5D48B34F009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76D073A6A391D6F61581DDD2 /* KineticVelocityWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70C989D81FC7E2CD5B54AB2 /* Build configuration list for PBXNativeTarget "KineticVelocityWatch" */;
+			buildPhases = (
+				A9BC7DEC08D124EC27C0D627 /* Sources */,
+				490F545CACB0EB401C2DFAC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KineticVelocityWatch;
+			packageProductDependencies = (
+			);
+			productName = KineticVelocityWatch;
+			productReference = 2993BFFFEF4D0987E3FCBCBC /* KineticVelocityWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05D0B272ADA73A085E867F2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					76D073A6A391D6F61581DDD2 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0AFC8D070D11FD043AAC01F0 /* Build configuration list for PBXProject "KineticVelocityWatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 972ED8EA4484921DBFDE6E35;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4D9A60751B7CF5D48B34F009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76D073A6A391D6F61581DDD2 /* KineticVelocityWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		490F545CACB0EB401C2DFAC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B58367957FDAE9E8791E156 /* Assets.xcassets in Resources */,
+				9626C773D4936DD6ACDBABCA /* swing_calibration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9BC7DEC08D124EC27C0D627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF298099866DF4C756E17C /* CalibrationDebug.swift in Sources */,
+				264AECFD6149F5B8296C14AC /* Components.swift in Sources */,
+				081DF4493C80BEF5997184B3 /* DiagnosticsLogger.swift in Sources */,
+				F6AFD2C99DC0C75D9B847718 /* HealthKitWorkoutManager.swift in Sources */,
+				A04170B4B93657B805161CED /* KineticVelocityWatchApp.swift in Sources */,
+				9EC1BDC42FFB673A6B16602F /* Models.swift in Sources */,
+				B1558162171BA28BE59EA95E /* MotionSwingDetector.swift in Sources */,
+				E670ECBCEB49F2039555D4D9 /* SwingCalibration.swift in Sources */,
+				29B637D5F89571B40A51A3A0 /* SwingWindowRecorder.swift in Sources */,
+				9FE484566CB419C742E78011 /* Theme.swift in Sources */,
+				E71E1E04FE4A9852A4DB3B4D /* Views.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		013E5D003FD5568DB559D1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		993F44A616830C185E0FA467 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KineticVelocityWatch/KineticVelocityWatch.entitlements;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KineticVelocityWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lichaochen.kineticvelocity.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		DA43E864C680BCCFFDEEB88F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		F4A8C4C8BB1AB8EEBA576C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KineticVelocityWatch/KineticVelocityWatch.entitlements;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = KineticVelocityWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lichaochen.kineticvelocity.watch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AFC8D070D11FD043AAC01F0 /* Build configuration list for PBXProject "KineticVelocityWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013E5D003FD5568DB559D1D1 /* Debug */,
+				DA43E864C680BCCFFDEEB88F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A70C989D81FC7E2CD5B54AB2 /* Build configuration list for PBXNativeTarget "KineticVelocityWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				993F44A616830C185E0FA467 /* Debug */,
+				F4A8C4C8BB1AB8EEBA576C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05D0B272ADA73A085E867F2B /* Project object */;
+}

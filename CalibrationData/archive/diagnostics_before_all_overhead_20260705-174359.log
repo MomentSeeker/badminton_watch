@@ -1,0 +1,28 @@
+2026-07-05T04:07:53Z training.start requested hand=right
+2026-07-05T04:07:53Z runtime.session.start requested
+2026-07-05T04:07:53Z motion.strokeTypeModel.loaded type=nearest_centroid rows=50 loo=0.920 features=rotationYMean,accelerationXMax,signedLateralRotation,accelerationZMin
+2026-07-05T04:07:53Z runtime.session.invalidated reason=-1 error=This application does not have an appropriate Info plist key or entitlement to start a session.
+2026-07-05T04:08:04Z healthkit.authorization success=true
+2026-07-05T04:08:04Z training.healthkit.authorized true
+2026-07-05T04:08:04Z healthkit.begin requested hand=right
+2026-07-05T04:08:04Z healthkit.session.startActivity
+2026-07-05T04:08:04Z healthkit.builder.beginCollection success
+2026-07-05T04:08:04Z training.healthkit.begin success
+2026-07-05T04:08:04Z healthkit.session.state 1->2
+2026-07-05T04:08:04Z training.healthkit.state 1->2
+2026-07-05T04:08:05Z motion.strokeType.unknown label=overhead confidence=0.010 d1=8.194 d2=8.367
+2026-07-05T04:08:55Z motion.strokeType.unknown label=underhand confidence=0.078 d1=5.770 d2=6.740
+2026-07-05T04:09:05Z motion.strokeType.unknown label=underhand confidence=0.052 d1=6.191 d2=6.876
+2026-07-05T04:09:53Z motion.strokeType.unknown label=underhand confidence=0.053 d1=6.893 d2=7.657
+2026-07-05T04:10:12Z training.endAndSave requested
+2026-07-05T04:10:12Z runtime.session.stop
+2026-07-05T04:10:12Z healthkit.finish requested discard=false
+2026-07-05T04:10:12Z healthkit.builder.finishWorkout
+2026-07-05T04:10:14Z training.state idle after save
+2026-07-05T04:10:23Z healthkit.authorization success=true
+2026-07-05T04:10:23Z healthkit.begin requested hand=right
+2026-07-05T04:10:23Z healthkit.session.startActivity
+2026-07-05T04:10:23Z healthkit.builder.beginCollection success
+2026-07-05T04:10:23Z healthkit.session.state 1->2
+2026-07-05T04:12:14Z healthkit.finish requested discard=true
+2026-07-05T04:12:14Z healthkit.builder.discardWorkout

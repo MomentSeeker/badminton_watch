@@ -1,0 +1,5 @@
+startRow,endRow,labelStrokeType,labelDirection,labelPower,note
+1,20,overhead,forehand,non_smash,20 forehand overhead clears
+21,40,overhead,backhand,non_smash,20 backhand overhead clears
+41,60,underhand,forehand,non_smash,20 forehand underhand lifts
+61,80,overhead,forehand,smash,20 forehand smashes

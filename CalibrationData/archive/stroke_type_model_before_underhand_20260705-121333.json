@@ -1,0 +1,51 @@
+{
+  "centroids": {
+    "overhead": [
+      0.5735522205821633,
+      0.5638185927538226,
+      0.5615581693061042,
+      -0.5390655362984046
+    ],
+    "underhand": [
+      -0.8603283308732447,
+      -0.8457278891307339,
+      -0.8423372539591563,
+      0.8085983044476069
+    ]
+  },
+  "classCounts": {
+    "overhead": 30,
+    "underhand": 20
+  },
+  "classes": [
+    "overhead",
+    "underhand"
+  ],
+  "features": [
+    "rotationYMean",
+    "accelerationXMax",
+    "signedLateralRotation",
+    "accelerationZMin"
+  ],
+  "labelColumn": "labelStrokeType",
+  "leaveOneOutAccuracy": 0.92,
+  "leaveOneOutConfusion": {
+    "overhead->overhead": 30,
+    "underhand->overhead": 4,
+    "underhand->underhand": 16
+  },
+  "means": [
+    -2.018489658829477,
+    1.3296344688534736,
+    -84.51863248152658,
+    -3.3944288790225983
+  ],
+  "modelType": "nearest_centroid",
+  "stds": [
+    2.418403486933729,
+    1.2939872727959505,
+    102.15868981322005,
+    1.87649653080853
+  ],
+  "trainingRows": 50
+}
