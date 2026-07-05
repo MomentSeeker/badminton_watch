@@ -70,26 +70,35 @@ final class HealthKitWorkoutManager: NSObject, @unchecked Sendable {
         }
     }
 
-    func finish(discard: Bool = false) async {
+    func finish(discard: Bool = false, timeoutSeconds: TimeInterval = 4.0) async {
         let endDate = Date()
         DiagnosticsLogger.log("healthkit.finish requested discard=\(discard)")
         session?.end()
 
         guard let builder else {
+            DiagnosticsLogger.log("healthkit.finish no builder")
             session = nil
             return
         }
 
         await withCheckedContinuation { continuation in
+            let gate = ContinuationGate(continuation)
+
+            DispatchQueue.main.asyncAfter(deadline: .now() + timeoutSeconds) {
+                DiagnosticsLogger.log("healthkit.finish timeout after \(timeoutSeconds)s")
+                gate.resume()
+            }
+
             builder.endCollection(withEnd: endDate) { _, _ in
+                DiagnosticsLogger.log("healthkit.builder.endCollection")
                 if discard {
                     builder.discardWorkout()
                     DiagnosticsLogger.log("healthkit.builder.discardWorkout")
-                    continuation.resume()
+                    gate.resume()
                 } else {
                     builder.finishWorkout { _, _ in
                         DiagnosticsLogger.log("healthkit.builder.finishWorkout")
-                        continuation.resume()
+                        gate.resume()
                     }
                 }
             }
@@ -124,6 +133,24 @@ final class HealthKitWorkoutManager: NSObject, @unchecked Sendable {
         DispatchQueue.main.async { [onMetrics] in
             onMetrics?(metrics)
         }
+    }
+}
+
+private final class ContinuationGate: @unchecked Sendable {
+    private let lock = NSLock()
+    private var continuation: CheckedContinuation<Void, Never>?
+
+    init(_ continuation: CheckedContinuation<Void, Never>) {
+        self.continuation = continuation
+    }
+
+    func resume() {
+        lock.lock()
+        let continuation = continuation
+        self.continuation = nil
+        lock.unlock()
+
+        continuation?.resume()
     }
 }
 

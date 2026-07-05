@@ -166,6 +166,13 @@ final class TrainingSessionStore: ObservableObject {
             }
 
             startTimer()
+
+            if let autoEndDelay = ProcessInfo.processInfo.environment["KV_AUTO_END_AFTER"].flatMap(Double.init) {
+                Task { @MainActor in
+                    try? await Task.sleep(nanoseconds: UInt64(max(0, autoEndDelay) * 1_000_000_000))
+                    self.endAndSave()
+                }
+            }
         }
     }
 
@@ -230,6 +237,11 @@ final class TrainingSessionStore: ObservableObject {
     }
 
     func endAndSave() {
+        guard state != .saving else {
+            DiagnosticsLogger.log("training.endAndSave ignored already saving")
+            return
+        }
+
         DiagnosticsLogger.log("training.endAndSave requested")
         state = .saving
         timer?.invalidate()
@@ -239,9 +251,11 @@ final class TrainingSessionStore: ObservableObject {
 
         Task {
             await workoutManager.finish()
+            DiagnosticsLogger.log("training.healthkit.finish returned")
 
             try? await Task.sleep(nanoseconds: 350_000_000)
             state = .saved
+            DiagnosticsLogger.log("training.state saved")
 
             try? await Task.sleep(nanoseconds: 1_100_000_000)
             state = .idle
