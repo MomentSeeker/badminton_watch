@@ -272,19 +272,19 @@ private struct VisualIconPill: View {
     var showsDot: Bool = false
 
     var body: some View {
-        HStack(spacing: 7) {
-            VisualIcon(kind: kind, color: tint, size: 34)
-                .frame(width: 39, height: 34)
+        HStack(alignment: .center, spacing: 4) {
+            VisualIcon(kind: kind, color: tint, size: 44)
+                .frame(width: 46, height: 44)
 
             Text(value)
-                .font(VisualToken.number(16))
+                .font(VisualToken.number(18))
                 .foregroundStyle(VisualToken.white)
                 .lineLimit(1)
                 .minimumScaleFactor(0.46)
                 .allowsTightening(true)
                 .frame(maxWidth: .infinity, alignment: .center)
         }
-        .padding(.horizontal, 10)
+        .padding(.horizontal, 8)
         .frame(width: 96, height: 58)
         .background {
             VisualGlowPanel(
@@ -353,23 +353,31 @@ private struct VisualActionGlyph: View {
     }
 
     var body: some View {
-        VStack(spacing: 5) {
+        HStack(alignment: .center, spacing: 3) {
             ZStack {
                 VisualGlowPanel(shape: Circle(), tint: tint, opacity: 0.12)
-                    .frame(width: 34, height: 34)
+                    .frame(width: 36, height: 36)
 
-                VisualSvgAsset(name: legendAssetName, size: 28, shadowColor: tint)
+                VisualSvgAsset(name: legendAssetName, size: 33, shadowColor: tint)
             }
 
             Text(value)
-                .font(VisualToken.number(12.5))
+                .font(VisualToken.number(14))
                 .foregroundStyle(VisualToken.white)
                 .lineLimit(1)
                 .minimumScaleFactor(0.46)
                 .allowsTightening(true)
-                .frame(width: 38)
+                .frame(maxWidth: .infinity, alignment: .center)
         }
-        .frame(width: 44)
+        .padding(.horizontal, 4)
+        .frame(width: 86, height: 42)
+        .background {
+            VisualGlowPanel(
+                shape: RoundedRectangle(cornerRadius: 14, style: .continuous),
+                tint: tint,
+                opacity: 0.045
+            )
+        }
     }
 }
 
@@ -655,13 +663,18 @@ private struct VisualActionMapView: View {
             VisualSmashHeader(value: session.smashCount.groupedString)
                 .position(x: 102, y: 65)
 
-            HStack(spacing: 8) {
-                VisualActionGlyph(kind: .arrowUpRight, value: session.overheadCount.groupedString, tint: VisualToken.green)
-                VisualActionGlyph(kind: .arrowDownRight, value: session.underhandCount.groupedString, tint: VisualToken.lime)
-                VisualActionGlyph(kind: .arrowRight, value: session.forehandCount.groupedString, tint: VisualToken.orange)
-                VisualActionGlyph(kind: .arrowLeft, value: session.backhandCount.groupedString, tint: VisualToken.orange)
+            VStack(spacing: 6) {
+                HStack(spacing: 6) {
+                    VisualActionGlyph(kind: .arrowUpRight, value: session.overheadCount.groupedString, tint: VisualToken.lime)
+                    VisualActionGlyph(kind: .arrowDownRight, value: session.underhandCount.groupedString, tint: VisualToken.lime)
+                }
+
+                HStack(spacing: 6) {
+                    VisualActionGlyph(kind: .arrowRight, value: session.forehandCount.groupedString, tint: VisualToken.orange)
+                    VisualActionGlyph(kind: .arrowLeft, value: session.backhandCount.groupedString, tint: VisualToken.orange)
+                }
             }
-            .position(x: 102, y: 136)
+            .position(x: 102, y: 137)
 
             VisualSeparator()
                 .position(x: 102, y: 172)

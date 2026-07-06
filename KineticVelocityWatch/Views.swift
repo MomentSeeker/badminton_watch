@@ -350,8 +350,8 @@ struct BadmintonDataView: View {
                         value: "\(session.maxSwingSpeedKph)",
                         unit: "",
                         systemImage: "gauge.with.dots.needle.67percent",
-                        fill: KVColor.load,
-                        accent: KVColor.load
+                        fill: KVColor.lime,
+                        accent: KVColor.lime
                     ),
                     .init(
                         title: "最长连拍",
@@ -412,15 +412,15 @@ struct ActionStatsView: View {
                         title: "上手球",
                         value: session.overheadCount.groupedString,
                         systemImage: "arrow.up.right",
-                        fill: KVColor.load,
-                        accent: KVColor.load
+                        fill: KVColor.lime,
+                        accent: KVColor.lime
                     ),
                     .init(
                         title: "下手球",
                         value: session.underhandCount.groupedString,
                         systemImage: "arrow.down.right",
                         fill: nil,
-                        accent: KVColor.load
+                        accent: KVColor.lime
                     )
                 ])
 
@@ -631,7 +631,9 @@ struct SavedView: View {
     }
 }
 
+#if !CLI_BUILD
 #Preview("Start") {
     RootView()
         .environmentObject(TrainingSessionStore())
 }
+#endif

@@ -793,7 +793,13 @@ private struct ActionMetricCell: View {
     }
 
     var body: some View {
-        ZStack {
+        HStack(alignment: .center, spacing: 7) {
+            Image(systemName: metric.systemImage)
+                .font(.system(size: 20, weight: .black))
+                .foregroundStyle(isFilled ? Color.black : metric.accent)
+                .frame(width: 30, height: 30)
+                .background((isFilled ? Color.black.opacity(0.10) : metric.accent.opacity(0.16)), in: Circle())
+
             Text(metric.value)
                 .font(KVFont.headline(23))
                 .foregroundStyle(isFilled ? Color.black : KVColor.text)
@@ -801,28 +807,11 @@ private struct ActionMetricCell: View {
                 .minimumScaleFactor(0.45)
                 .allowsTightening(true)
                 .frame(maxWidth: .infinity, alignment: .center)
-                .padding(.leading, 30)
-                .padding(.trailing, 3)
                 .layoutPriority(1)
-
-            VStack(alignment: .leading, spacing: 2) {
-                Image(systemName: metric.systemImage)
-                    .font(.system(size: 11, weight: .black))
-                    .foregroundStyle(isFilled ? Color.black : metric.accent)
-                    .frame(width: 18, height: 18)
-                    .background((isFilled ? Color.black.opacity(0.10) : metric.accent.opacity(0.16)), in: Circle())
-
-                Text(metric.title)
-                    .font(KVFont.body(6.2, weight: .bold))
-                    .foregroundStyle(isFilled ? Color.black : metric.accent)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.58)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding(.horizontal, 5)
+        .padding(.horizontal, 6)
         .padding(.vertical, 3)
-        .frame(maxWidth: .infinity, minHeight: 38, maxHeight: 40, alignment: .leading)
+        .frame(maxWidth: .infinity, minHeight: 38, maxHeight: 40, alignment: .center)
         .background {
             RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .fill(cellFill)
@@ -861,32 +850,14 @@ private struct SegmentCell: View {
     }
 
     var body: some View {
-        HStack(alignment: .center, spacing: dense ? 5 : 6) {
-            VStack(alignment: .leading, spacing: dense ? 2 : 3) {
-                Image(systemName: segment.systemImage)
-                    .font(.system(size: dense ? 10 : (compact ? 11 : 13), weight: .black))
-                    .foregroundStyle(isFilled ? Color.black : segment.accent)
-                    .frame(width: dense ? 18 : (compact ? 19 : 22), height: dense ? 18 : (compact ? 19 : 22))
-                    .background((isFilled ? Color.black.opacity(0.10) : segment.accent.opacity(0.16)), in: Circle())
+        HStack(alignment: .center, spacing: dense ? 7 : (compact ? 8 : 10)) {
+            Image(systemName: segment.systemImage)
+                .font(.system(size: dense ? 20 : (compact ? 25 : 31), weight: .black))
+                .foregroundStyle(isFilled ? Color.black : segment.accent)
+                .frame(width: dense ? 32 : (compact ? 36 : 44), height: dense ? 32 : (compact ? 36 : 44))
+                .background((isFilled ? Color.black.opacity(0.10) : segment.accent.opacity(0.16)), in: Circle())
 
-                Text(segment.title)
-                    .font(KVFont.body(dense ? 6.2 : (compact ? 6.4 : 8), weight: .bold))
-                    .foregroundStyle(isFilled ? Color.black : segment.accent)
-                    .lineLimit(2)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .minimumScaleFactor(0.70)
-
-                if !segment.footnote.isEmpty {
-                    Text(segment.footnote)
-                        .font(KVFont.data(dense ? 5.4 : (compact ? 5.8 : 6), weight: .medium))
-                        .foregroundStyle(isFilled ? Color.black.opacity(0.58) : KVColor.muted)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.45)
-                }
-            }
-            .frame(width: dense ? 29 : (compact ? 31 : 42), alignment: .leading)
-
-            HStack(alignment: .firstTextBaseline, spacing: 2) {
+            HStack(alignment: .center, spacing: 2) {
                 Text(segment.value)
                     .font(KVFont.headline(dense ? 17 : (compact ? 20 : 26)))
                     .foregroundStyle(isFilled ? Color.black : KVColor.text)
@@ -903,11 +874,11 @@ private struct SegmentCell: View {
                         .minimumScaleFactor(0.55)
                 }
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(maxWidth: .infinity, alignment: .center)
         }
-        .padding(.horizontal, dense ? 4 : (compact ? 5 : 8))
+        .padding(.horizontal, dense ? 5 : (compact ? 7 : 9))
         .padding(.vertical, dense ? 4 : (compact ? 5 : 8))
-        .frame(maxWidth: .infinity, minHeight: dense ? 42 : (compact ? 48 : 60), alignment: .leading)
+        .frame(maxWidth: .infinity, minHeight: dense ? 42 : (compact ? 48 : 60), alignment: .center)
         .background {
             RoundedRectangle(cornerRadius: compact ? 16 : 20, style: .continuous)
                 .fill(cellFill)
